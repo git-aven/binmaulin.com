@@ -1,0 +1,35 @@
+html,
+body {
+  height: 96%;
+  font-size: 16px;
+  writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+  -moz-writing-mode: vertical-rl;
+  overflow: auto;
+}
+
+.content {
+  margin: auto;
+  margin-right: 0;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  padding-right: 0;
+  padding-left: 20px;
+  font-family: Georgia, "Nimbus Roman No9 L", "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU, serif;
+  font-size: 1.5rem;
+  text-align: justify;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.content a {
+  color: deepskyblue;
+  letter-spacing: .125em;
+}
+
+ul,
+li {
+  list-style: none;
+  text-align: left;
+}
