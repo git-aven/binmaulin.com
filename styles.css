@@ -1,35 +1,140 @@
-html,
+html {
+    min-height: 100%;
+    overflow: auto;
+}
+
 body {
-  height: 96%;
-  font-size: 16px;
-  writing-mode: vertical-rl;
-  -ms-writing-mode: tb-rl;
-  -webkit-writing-mode: vertical-rl;
-  -moz-writing-mode: vertical-rl;
-  overflow: auto;
+    min-height: 100dvh;
+    margin: 0;
+    background-color: #fff;
+    color: #222;
 }
 
 .content {
-  margin: auto;
-  margin-right: 0;
-  padding-top: 30px;
-  padding-bottom: 40px;
-  padding-right: 0;
-  padding-left: 20px;
-  font-family: Georgia, "Nimbus Roman No9 L", "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU, serif;
-  font-size: 1.5rem;
-  text-align: justify;
-  overflow-x: auto;
-  overflow-y: hidden;
+    writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    -moz-writing-mode: vertical-rl;
+
+    height: 100vh;
+    height: 100dvh;
+
+    min-width: 100%;
+    box-sizing: border-box;
+    padding-top: 1.8em;
+    padding-bottom: 4em;
+    padding-left: 1em;
+    padding-right: 0.5em;
+
+    font-family:
+        "Noto Serif TC", "Noto Serif CJK TC", "Songti TC", "PMingLiU",
+        "MingLiU", serif;
+
+    font-size: 1.5rem;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: justify;
+}
+
+.content p {
+    margin-block-start: 1.1em;
+    margin-block-end: 1.2em;
+    text-align: justify;
+}
+
+.content h1,
+.content h2 {
+    position: relative;
+    margin: 0;
+    margin-block-start: 24px;
+    margin-block-end: 12px;
+    font-weight: 600;
+}
+
+.content h1 {
+    margin-block-end: 1rem;
+    font-size: 2rem;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+}
+
+.content .category {
+    color: gray;
+    margin-right: 1.2em;
+    margin-left: -0.7em;
+    margin-top: 0.2em;
+    font-size: 1.5rem;
 }
 
 .content a {
-  color: deepskyblue;
-  letter-spacing: .125em;
+    color: blue;
+    letter-spacing: 0.125em;
+    text-decoration: none;
 }
 
-ul,
-li {
-  list-style: none;
-  text-align: left;
+.content a:hover,
+.content a:focus-visible {
+    text-decoration: underline;
+}
+
+.content a:visited {
+    color: rebeccapurple;
+}
+
+.content nav a:visited {
+    color: blue;
+}
+
+.content ul {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-top: 2em;
+    padding: 0;
+}
+
+.content li {
+    list-style: none;
+    text-align: left;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 0.8em;
+    font-size: 1.3rem;
+}
+
+.content .mail {
+    color: dimgray;
+    font-size: 1.2rem;
+    margin-inline-start: 2em;
+    margin-inline-end: auto;
+}
+
+.content nav a.mail,
+.content nav a.mail:visited {
+    color: dimgray;
+}
+
+.content .notice {
+    color: dimgray;
+    font-size: 1.3rem;
+    margin-inline-start: 1em;
+    margin-inline-end: auto;
+}
+
+.content .indented-list {
+    margin-right: 1.5em;
+}
+
+.content .collection-h1-span {
+    font-size: 0.65em;
+    margin-top: 1em;
+}
+
+.content h1.padding-404 {
+    padding-right: 1.2em;
 }
